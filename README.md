@@ -6,3 +6,5 @@ A project to build a NOOBS OS for distribution including
 - Apache web server
 - mariadb
 - Webmin
+- i@nseo
+- Archery Timing System
