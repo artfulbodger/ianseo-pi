@@ -1,0 +1,15 @@
+{
+    "description": "A port of Debian with PIXEL desktop, i@nseo, Webmin and Archery Timing System",
+    "kernel": "4.19",
+    "name": "Raspbian Ianseo",
+    "password": "ianseo",
+    "release_date": "2020-06-13",
+    "supported_models": [
+        "Pi Zero",
+        "Pi 3",
+        "Pi 4"
+    ],
+    "url": "https://ianseo.net/",
+    "username": "pi",
+    "version": "buster"
+}
