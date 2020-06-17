@@ -1,0 +1,6 @@
+#! /bin/bash
+
+HOSTNAME=`uname -n`
+printf "\n"
+printf "I@nseo................:http://$HOSTNAME\n"
+printf "Device Administration.:http://$HOSTNAME:10000\n" 

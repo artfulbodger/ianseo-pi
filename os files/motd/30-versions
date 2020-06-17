@@ -1,0 +1,10 @@
+#! /bin/bash
+
+if ! pdiof apache2 > /dev/null
+then
+        APACHE2 =`apache -v`
+else
+        APACHE2 - 'Not Installed'
+fi
+printf "\n"
+printf "Apache Version:           $APACHE2\n"
