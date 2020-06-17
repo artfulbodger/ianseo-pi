@@ -1,0 +1,9 @@
+#! /bin/bash
+
+HOSTNAME=`uname -n`
+printf "\n"
+printf "Timing for Archery Version : 0.2.4\n"
+printf "	Timing Control..............: http://$HOSTNAME:5000\n"
+printf "	Timing display target 1.....: http://$HOSTNAME:5001\n"
+printf "	Timing display target 2.....: http://$HOSTNAME:5002\n"
+printf "	Timing display both targets.: http://$HOSTNAME:5003\n"
