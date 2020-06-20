@@ -7,3 +7,4 @@ sudo apt-get install -y nodejs
 # create system service file
 sudo wget -N https://raw.githubusercontent.com/artfulbodger/ianseo-pi/master/os%20files/WATiming/Timing.service --directory-prefix /etc/systemd/system
 sudo chmod +x /etc/systemd/system/Timing.service
+sudo systemctl daemon-reload
