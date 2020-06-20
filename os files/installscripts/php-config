@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#Backup existing php.ini file
+sudo cp /etc/php/7.3/apache2/php.ini /etc/php/7.3/apache2/php.ini.bak
+
+# Update the php directivies required by ianseo
+# upload_max_filesize = 256M
+# post_max_size = 256M
+# memory_limit = 1024M
+
+sudo sed -i 's,^upload_max_filesize =.*$,upload_max_filesize = 256M,' /etc/php/7.3/apache2/php.ini
+sudo sed -i 's,^post_max_size =.*$,post_max_size = 256M,' /etc/php/7.3/apache2/php.ini
+sudo sed -i 's,^memory_limit =.*$,memory_limit = 1024M,' /etc/php/7.3/apache2/php.ini
+
+# Restart apache for new php config
+sudo service apache2 reload

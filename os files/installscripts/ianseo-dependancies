@@ -1,4 +1,4 @@
 #!/bin/bash
-sudo apt-get install apache2 mariadb-server mariadb-client php php-mysql php-gd php-curl php-mbstring php-mcrypt php-zip imagemagick php-imagick unzip libapache2-mod-php -y
+sudo apt-get install apache2 mariadb-server mariadb-client php php-mysql php-gd php-curl php-mbstring php-mcrypt php-zip imagemagick php-imagick unzip libapache2-mod-php -y  
 sudo apt autoremove --purge -y
 sudo reboot
