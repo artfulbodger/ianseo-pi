@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Update the apt source list to include the hosted deb repo for webmin
+echo "deb https://download.webmin.com/download/repository sarge contrib" | sudo tee -a /etc/apt/sources.list
+cd ~
+
+# Add gpg signing key for webmin repo to apt
+wget https://download.webmin.com/jcameron-key.asc
+sudo apt-key add jcameron-key.asc
+
+# Install prereqs, update apt and install webmin 
+sudo apt-get install apt-transport-https -y
+sudo apt-get update
+sudo apt-get install webmin -y
+
+# Clean up files
+rm jcameron-key.asc
