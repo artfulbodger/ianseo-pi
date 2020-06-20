@@ -11,6 +11,7 @@ sudo cp /etc/php/7.3/apache2/php.ini /etc/php/7.3/apache2/php.ini.bak
 sudo sed -i 's,^upload_max_filesize =.*$,upload_max_filesize = 256M,' /etc/php/7.3/apache2/php.ini
 sudo sed -i 's,^post_max_size =.*$,post_max_size = 256M,' /etc/php/7.3/apache2/php.ini
 sudo sed -i 's,^memory_limit =.*$,memory_limit = 1024M,' /etc/php/7.3/apache2/php.ini
+sudo sed -i 's,^max_execution_time =.*$,max_execution_time = 120,' /etc/php/7.3/apache2/php.ini
 
 # Restart apache for new php config
 sudo service apache2 reload
