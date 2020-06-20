@@ -1,0 +1,19 @@
+[Unit]
+Description=Timing for Archery
+After=network.target
+
+[Service]
+WorkingDirectory=/home/pi/WATiming
+ExecStart=/usr/bin/nodejs /home/pi/WATiming/app.js  
+Restart=always
+RestartSec=5
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=WATiming
+StandardOutput=syslog
+StandardError=syslog
+User=pi
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
