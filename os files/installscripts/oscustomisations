@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Add eth0 static address in addition to DHCP address 
+sudo wget -N https://raw.githubusercontent.com/artfulbodger/ianseo-pi/master/os%20files/oscustomisations/eth01 --directory-prefix /etc/network/interfaces.d
+
+# Replace the splash screen at boot
+sudo wget -N https://raw.githubusercontent.com/artfulbodger/ianseo-pi/master/os%20files/oscustomisations/splash.png --directory-prefix /usr/share/plymouth/themes/pix
+
+# Add motd files for ssh sessions
+sudo wget -N https://raw.githubusercontent.com/artfulbodger/ianseo-pi/master/os%20files/oscustomisations/motd/00-banner --directory-prefix /etc/update-motd.d
+sudo chmod +x /etc/update-motd.d/00-banner
+sudo wget -N https://raw.githubusercontent.com/artfulbodger/ianseo-pi/master/os%20files/oscustomisations/motd/20-urls --directory-prefix /etc/update-motd.d
+sudo chmod +x /etc/update-motd.d/20-urls
+sudo wget -N https://raw.githubusercontent.com/artfulbodger/ianseo-pi/master/os%20files/oscustomisations/motd/30-versions --directory-prefix /etc/update-motd.d
+sudo chmod +x /etc/update-motd.d/30-versions
+sudo wget -N https://raw.githubusercontent.com/artfulbodger/ianseo-pi/master/os%20files/oscustomisations/motd/40-timing --directory-prefix /etc/update-motd.d
+sudo chmod +x /etc/update-motd.d/40-timing
+
+# Add custom Desktop to user pi
+wget -N https://raw.githubusercontent.com/artfulbodger/ianseo-pi/master/os%20files/oscustomisations/ianseo_desktop.jpg --directory-prefix /home/pi
+sed -i 's,^wallpaper=.*$,wallpaper=/home/pi/ianseo_desktop.jpg,' /home/pi/.config/pcmanfm/LXDE-pi/desktop-items-*.conf && pcmanfm --reconfigure
