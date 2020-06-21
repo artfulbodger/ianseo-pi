@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Applies all software to upgrade Raspberry OS Lite to the desktop version, add VNC and Chromium browser for localhost
+sudo apt update && sudo apt upgrade -y
+sudo apt install raspberrypi-ui-mods realvnc-vnc-server chromium-browser -y
+sudo reboot
