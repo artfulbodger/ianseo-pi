@@ -16,6 +16,42 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 #### Removed
 
  - Unecessary Software from base OS image
+ 
+### Added
+
+- Update ianseo to 2020-06-02 rev 38
+
+### Removed
+
+- idle
+- python3-pygame
+- python-pygame
+- python-tk
+- idle
+- python3-tk
+- python3-rpi.gpio
+- python-serial
+- python3-serial
+- python-picamera
+- python3-picamera
+- dillo
+- scratch
+- nuscratch
+- smartsim
+- penguinspuzzle
+- pistore
+- sonic-pi
+- python3-numpy
+- python3-pifacecommon
+- python3-pifacedigitalio
+- python3-pifacedigital-scratch-handler
+- python-pifacecommon
+- python-pifacedigitalio
+- oracle-java8-jdk
+- minecraft-pi
+- python-minecraftpi
+- wolfram-engine
+- geany
 
 ## [20200613] - 2020-06-13
 
