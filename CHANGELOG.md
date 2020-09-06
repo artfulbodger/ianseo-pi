@@ -6,6 +6,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [20200906] - 2020-09-06
+
+#### Added
+
+ - non-root Webmin user 'ianseo' to run custom commands
+ - Custom logo to Webmin
+ - Desktop config for user pi
+
+#### Changed
+
+ - Base OS to Raspberry Pi OS 'August 2020'
+ - ianseo 2020-06-02 rev 146
+ - Moved WATiming to outside user path
+ - 'pi' user default password
+ 
+#### Removed
+
+ - apache default website and virtual host
+
 ## [20200621] - 2020-06-21
 
 #### Added
