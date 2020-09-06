@@ -4,6 +4,11 @@
 curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
 sudo apt-get install -y nodejs
 
+# Install WATiming using npm install
+sudo npm install /var/www/WATiming/
+# Clean up npm logs
+sudo rm -r /home/pi/.npm/_logs/*.log
+
 # create system service file
 sudo wget -N https://raw.githubusercontent.com/artfulbodger/ianseo-pi/master/os%20files/WATiming/Timing.service --directory-prefix /etc/systemd/system
 sudo chmod +x /etc/systemd/system/Timing.service
