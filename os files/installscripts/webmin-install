@@ -21,3 +21,5 @@ sudo wget -N https://raw.githubusercontent.com/artfulbodger/ianseo-pi/master/os%
 sudo wget -N https://raw.githubusercontent.com/artfulbodger/ianseo-pi/master/os%20files/webmin/1591302971.html --directory-prefix /etc/webmin/custom
 sudo wget -N https://raw.githubusercontent.com/artfulbodger/ianseo-pi/master/os%20files/webmin/1591896987.cmd --directory-prefix /etc/webmin/custom
 sudo wget -N https://raw.githubusercontent.com/artfulbodger/ianseo-pi/master/os%20files/webmin/1591896987.html --directory-prefix /etc/webmin/custom
+# Install custom logo logo
+sudo wget -N https://raw.githubusercontent.com/artfulbodger/ianseo-pi/master/os%20files/webmin/logo_welcome.png --directory-prefix /etc/webmin/authentic-theme

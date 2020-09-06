@@ -18,4 +18,4 @@ sudo chmod +x /etc/update-motd.d/40-timing
 
 # Add custom Desktop to user pi
 wget -N https://raw.githubusercontent.com/artfulbodger/ianseo-pi/master/os%20files/oscustomisations/ianseo_desktop.jpg --directory-prefix /home/pi
-sed -i 's,^wallpaper=.*$,wallpaper=/home/pi/ianseo_desktop.jpg,' /home/pi/.config/pcmanfm/LXDE-pi/desktop-items-*.conf && pcmanfm --reconfigure
+wget -N https://raw.githubusercontent.com/artfulbodger/ianseo-pi/master/os%20files/oscustomisations/desktop-items-0.conf --directory-prefix /home/pi/.config/pcmanfm/LXDE-pi
