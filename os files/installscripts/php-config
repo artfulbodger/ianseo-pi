@@ -24,7 +24,7 @@ sudo rm /etc/apache2/sites-available/000-default.conf
 sudo rm /etc/apache2/sites-available/default-ssl.conf
 
 #Download ianseo virtual hosts file
-wget -N https://raw.githubusercontent.com/artfulbodger/ianseo-pi/master/os%20files/apache/ianseo.conf --directory-prefix /etc/apache2/sites-available
+sudo wget -N https://raw.githubusercontent.com/artfulbodger/ianseo-pi/master/os%20files/apache/ianseo.conf --directory-prefix /etc/apache2/sites-available
 sudo chown root /etc/apache2/sites-available/ianseo.conf
 sudo chgrp root /etc/apache2/sites-available/ianseo.conf
 sudo a2ensite ianseo
