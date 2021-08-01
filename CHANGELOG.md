@@ -4,7 +4,23 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## [Unreleased]
+## [20210801] - 2020-08-01
+
+#### Added
+
+ - Clear 'AcceptGPL' in Parameters table post install.
+ - UFW Firewall
+
+#### Changed
+
+ - Base OS to Raspberry Pi OS 'May 7th 2021'.  Kernel version 5.10
+ - ianseo 2020-11-10 rev 318
+
+#### Removed
+
+#### Deprecated
+
+ - NOOBS SD Card image removed as replaced by Raspberry Pi Imager by Raspberry Pi Foundation
 
 ## [20200906] - 2020-09-06
 
