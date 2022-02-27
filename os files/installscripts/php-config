@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Backup existing php.ini file
-sudo cp /etc/php/7.3/apache2/php.ini /etc/php/7.4/apache2/php.ini.bak
+sudo cp /etc/php/7.4/apache2/php.ini /etc/php/7.4/apache2/php.ini.bak
 
 # Update the php directivies required by ianseo
 # upload_max_filesize = 256M
